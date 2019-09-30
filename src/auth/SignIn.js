@@ -13,7 +13,7 @@ class SignIn extends Component {
       handleSubmit = e => {
         e.preventDefault();
         console.log(this.props);
-        this.props.history.push("/books")
+        this.props.history.push("/myacc")
         // this.props.singInUser(this.state);
       };
     render() {

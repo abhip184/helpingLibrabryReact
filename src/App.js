@@ -5,6 +5,7 @@ import SignIn from './auth/SignIn';
 import Dashboard from './books/Dashboard';
 import BookDetails from './books/BookDetails';
 import DonateBook from './books/DonateBook';
+import Overview from './books/Overview';
 
 
 function App() {
@@ -14,10 +15,10 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={SignIn}></Route>
-          <Route exact path="/books" component={Dashboard}></Route>
+          <Route exact path="/myacc" component={Overview}></Route>
           <Route path="/viewbook/:id" component={BookDetails}></Route>
           <Route path="/donate" component={DonateBook}></Route>
-          <Route path="/mycont" component={DonateBook}></Route>
+          <Route path="/books" component={Dashboard}></Route>
 
         </Switch>
         </div>
